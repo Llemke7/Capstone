@@ -1,0 +1,25 @@
+Users
+------
+user_id (Primary Key)
+username
+email
+password_hash
+preferences (JSON)
+
+Recipes
+-------
+recipe_id (Primary Key)
+title
+ingredients (JSON)
+instructions (JSON)
+nutrition (JSON)
+image_url
+
+SavedRecipes
+------------
+saved_id (Primary Key)
+user_id (Foreign Key references Users.user_id)
+recipe_id (Foreign Key references Recipes.recipe_id)
+date_saved
+
+
