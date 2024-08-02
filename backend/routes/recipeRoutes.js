@@ -49,7 +49,7 @@ router.get('/favorites', authMiddleware, async (req, res) => {
     const user = await User.findByPk(req.user.id, {
       include: {
         model: Recipe,
-        through: { attributes: [] } // Exclude the through table attributes
+        through: { attributes: [] } 
       }
     });
 

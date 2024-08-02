@@ -1,5 +1,3 @@
-// src/components/addFavorite.js
-
 import { saveFavorite } from '../api';
 
 export const handleSaveFavorite = async (recipeId, setError) => {
