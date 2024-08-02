@@ -1,0 +1,78 @@
+/* General container styling */
+.home-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 1200px;
+  }
+  
+  /* Styling for the text section */
+  .home-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Styling for the heading */
+  .home-text h1 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Styling for the paragraph */
+  .home-text p {
+    color: #6c757d;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+  
+  /* Container for the links */
+  .home-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Styling for the individual links */
+  .home-link {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  /* Hover effect for the links */
+  .home-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Container for the image */
+  .home-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Styling for the image */
+  .home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
