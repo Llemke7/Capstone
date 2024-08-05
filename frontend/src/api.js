@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://dashboard.render.com/web/srv-cqo1av3v2p9s73aiunag/deploys/dep-cqo1fdlds78s73bplqj0';
 
 export const registerUser = async (userData) => {
   try {
@@ -71,3 +71,6 @@ export const getRecommendations = async () => {
     throw error.response.data;
   }
 };
+
+
+

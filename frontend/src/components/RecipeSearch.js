@@ -52,7 +52,7 @@ const RecipeSearch = () => {
                   ) : (
                     <p>No instructions available</p>
                   )}
-                  <button onClick={() => handleSaveFavorite(recipe.id)}>Save to Favorites</button>
+                  <button onClick={() => handleSaveFavorite(recipe.id, setError)}>Save to Favorites</button>
                 </li>
               ))
             ) : (

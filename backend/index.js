@@ -18,9 +18,18 @@ app.use('/api/auth', authRoutes);
 app.use('/api/recipes', recipeRoutes);
 app.use('/api/recommendations', recommendationRoutes);
 
-app.listen(PORT, async () => {
-  console.log(`Server is running on port ${PORT}`);
-  await connectDB();
-  await initializeRecipes();
-});
+const startServer = async () => {
+  try {
+    await connectDB();
+    await initializeRecipes();
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  } catch (error) {
+    console.error('Error starting server:', error);
+    process.exit(1); // Exit process with failure
+  }
+};
+
+startServer();
 
